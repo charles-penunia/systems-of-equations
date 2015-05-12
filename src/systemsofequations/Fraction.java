@@ -49,8 +49,8 @@ public class Fraction{
         numerator = numerator/gcd;
         denominator = denominator/gcd;
         if (denominator < 0){
-            numerator = -numerator;
-            denominator = -denominator;
+            numerator *= -1;
+            denominator *= -1;
         }
     }
 }
