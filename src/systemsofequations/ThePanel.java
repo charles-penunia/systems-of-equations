@@ -18,14 +18,14 @@ import javax.swing.*;
  */
 
 public class ThePanel extends JPanel{
-    JTextField a1Field, b1Field, cField, a2Field, b2Field, dField,
+    private JTextField a1Field, b1Field, cField, a2Field, b2Field, dField,
             xAnsField, yAnsField;
-    JButton newProbButton, submitButton;
-    int a1Num, b1Num, cNum, a2Num, b2Num, dNum;
-    String xSol, ySol;
-    Random generator;
-    ArrayList <Matrix> m;
-    ArrayList <Fraction> f;
+    private JButton newProbButton, submitButton;
+    private int a1Num, b1Num, cNum, a2Num, b2Num, dNum;
+    private String xSol, ySol;
+    private Random generator;
+    private ArrayList <Matrix> m;
+    private ArrayList <Fraction> f;
     public ThePanel(){
         setLayout(new BorderLayout());
         
