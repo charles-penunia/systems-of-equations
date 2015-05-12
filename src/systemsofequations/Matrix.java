@@ -6,7 +6,7 @@ package systemsofequations;
  */
 
 public class Matrix {
-    int[][] theMatrix;
+    private int[][] theMatrix;
     public Matrix(int topLeft, int topRight, int botLeft, int botRight){
         theMatrix = new int[2][2];
         theMatrix[0][0] = topLeft;
@@ -17,5 +17,8 @@ public class Matrix {
     public int determinant(){
         return theMatrix[1][1]*theMatrix[0][0] 
                 - theMatrix[0][1]*theMatrix[1][0];
+    }
+    public int[][] getMatrix(){
+        return theMatrix;
     }
 }
