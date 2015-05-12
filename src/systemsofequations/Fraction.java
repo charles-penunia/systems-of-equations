@@ -19,10 +19,12 @@ public class Fraction{
             numerator += f.getNumerator();
             reduceFraction(numerator, denominator);
         }
-        numerator = numerator * f.getDenominator() 
-                + f.getNumerator()* denominator;
-        denominator *= f.getDenominator();
-        reduceFraction(numerator, denominator);
+        else{
+            numerator = numerator * f.getDenominator() 
+                    + f.getNumerator()* denominator;
+            denominator *= f.getDenominator();
+            reduceFraction(numerator, denominator);
+        }
     }
     public String getFractionString(){
         if (numerator == 0 || denominator == 1)
